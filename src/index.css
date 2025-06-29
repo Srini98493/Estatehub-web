@@ -1,0 +1,68 @@
+@import "./styles/theme.css";
+@import "./styles/gradients.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: var(--font-primary);
+  }
+
+  body {
+    @apply bg-secondary text-black antialiased;
+  }
+}
+
+@layer components {
+  .input {
+    @apply w-full px-4 py-2 rounded-lg border border-gray-200 
+           focus:outline-none focus:ring-2 focus:ring-blue-500/20 
+           focus:border-blue-500 transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow transition-shadow hover:shadow-md;
+  }
+
+  .badge {
+    @apply px-2 py-1 text-xs font-medium rounded-full;
+  }
+
+  .badge-primary {
+    @apply bg-blue-100 text-blue-600;
+  }
+
+  .badge-success {
+    @apply bg-green-100 text-green-600;
+  }
+
+  .badge-warning {
+    @apply bg-yellow-100 text-yellow-600;
+  }
+
+  .badge-error {
+    @apply bg-red-100 text-red-600;
+  }
+
+  /* Modal Overlay */
+  .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Ensure it covers the entire screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000; /* Ensure it is above other content */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    padding: 20px; /* Padding inside the modal */
+    max-height: 90vh; /* Limit height */
+    overflow-y: auto; /* Scroll if content exceeds height */
+  }
+}

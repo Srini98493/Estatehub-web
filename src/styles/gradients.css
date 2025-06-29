@@ -1,0 +1,18 @@
+/* Custom Gradient Styles */
+.bg-primary-gradient {
+  background: linear-gradient(to right, #1aaddd, #117b9d);
+}
+
+.bg-primary-gradient-hover {
+  background: linear-gradient(to right, #117b9d, #1aaddd);
+}
+
+/* Ensure gradients work in all browsers */
+@supports not (background: linear-gradient(to right, #1aaddd, #117b9d)) {
+  .bg-primary-gradient {
+    background: #1aaddd;
+  }
+  .bg-primary-gradient-hover {
+    background: #117b9d;
+  }
+} 

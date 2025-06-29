@@ -1,0 +1,127 @@
+:root {
+  /* Colors */
+  --color-primary: #1aaddd;     /* Primary Blue */
+  --color-primary-hover: #117b9d;   /* Darker Blue */
+  --color-primary-light: #e6f7fc;   /* Light Blue */
+  --color-secondary: #117b9d;   /* Secondary Blue */
+  --color-secondary-hover: #0d5d77;   /* Darker Secondary Blue */
+  --color-tertiary: #1094BF;    /* Medium Blue */
+  --color-white: #FFFFFF;
+
+  /* Shades of Blue */
+  --color-blue-50: #F3FAFD;
+  --color-blue-100: #E8F5FC;
+  --color-blue-200: #DCF0FA;
+  --color-blue-300: #B1DFF6;
+
+  /* Greyscale */
+  --color-grey-50: #FBFBFB;
+  --color-grey-100: #F1F2F3;
+  --color-grey-200: #ECEDEE;
+  --color-grey-300: #CACCCE;
+  --color-grey-400: #B2BBC6;
+  --color-grey-500: #546881;
+  --color-grey-600: #3C4B5F;
+  --color-grey-700: #1D242D;
+
+  /* Keep existing variables */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  
+  /* Background Colors */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F9FAFB;
+  --color-bg-tertiary: #F3F4F6;
+  
+  /* Text Colors */
+  --color-text-primary: #000000;
+  --color-text-secondary: #000000;
+  --color-text-tertiary: #000000;
+  
+  /* Border Colors */
+  --color-border: #E5E7EB;
+  --color-border-hover: #D1D5DB;
+  
+  /* Font Family */
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-primary);
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  
+  /* Transitions */
+  --transition-all: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-colors: background-color, border-color, color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-opacity: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-transform: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Utility Classes */
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-tertiary { background-color: var(--color-tertiary); }
+.bg-white { background-color: var(--color-white); }
+
+/* Blue Background Classes */
+.bg-blue-50 { background-color: var(--color-blue-50); }
+.bg-blue-100 { background-color: var(--color-blue-100); }
+.bg-blue-200 { background-color: var(--color-blue-200); }
+.bg-blue-300 { background-color: var(--color-blue-300); }
+
+/* Grey Background Classes */
+.bg-grey-50 { background-color: var(--color-grey-50); }
+.bg-grey-100 { background-color: var(--color-grey-100); }
+.bg-grey-200 { background-color: var(--color-grey-200); }
+.bg-grey-300 { background-color: var(--color-grey-300); }
+.bg-grey-400 { background-color: var(--color-grey-400); }
+.bg-grey-500 { background-color: var(--color-grey-500); }
+.bg-grey-600 { background-color: var(--color-grey-600); }
+.bg-grey-700 { background-color: var(--color-grey-700); }
+
+/* Text Colors */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-tertiary { color: var(--color-tertiary); }
+.text-white { color: var(--color-white); }
+
+/* Border Colors */
+.border-primary { border-color: var(--color-primary); }
+.border-secondary { border-color: var(--color-secondary); }
+.border-tertiary { border-color: var(--color-tertiary); }
+.border-white { border-color: var(--color-white); }
+
+.description {
+  word-wrap: break-word; /* Ensure words break when they are too long */
+  overflow-wrap: break-word; /* Helps break long unbreakable words */
+  white-space: normal; /* Ensures that text will wrap normally */
+  max-width: 100%; /* Makes sure text container doesn't overflow */
+  line-height: 1.5; /* Optional, but adds better readability */
+}
